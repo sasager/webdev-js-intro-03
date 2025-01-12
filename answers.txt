@@ -1,0 +1,7 @@
+1) + is both a concatenation operator and an arithemetic operator. If a string is added to a number, the number is converted to a string due to type coercion so that they can be added together.
+
+2) == performs type coercion, so if a user inputs a string in a field where the input is expected to be a number, the function could incorrectly validate something like a discount code typed as a string. === does not perform type coercion and should be used in these scenarios instead.
+
+3) Most of the operators not listed on the concept page (like most of the ones on the MDN page) are confusing to me because I haven't had enough experience to truly understand how and why they're used. The arithmetic and logic operators seem pretty self explanatory for the most part.
+
+4) You could use the modulus operator to create a circular array, rotating through something like a list of people on a loop in order to schedule shifts fairly.
